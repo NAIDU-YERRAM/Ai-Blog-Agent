@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Blog Agent</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="main">
+  <h1>🤖 AI Blog Agent</h1>
+
+  <input id="topic" placeholder="Enter topic..." />
+
+  <select id="style">
+    <option>Professional</option>
+    <option>Developer</option>
+    <option>Story Teller</option>
+  </select>
+
+  <select id="language">
+    <option>English</option>
+    <option>Telugu</option>
+  </select>
+
+  <button onclick="generate()">Generate</button>
+  <button onclick="downloadPDF()">Download PDF</button>
+
+  <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
